@@ -1,0 +1,10 @@
+use("platzi-store")
+
+db.products.updateOne(
+  { _id: 2 },
+  {
+    $inc: { // Operator increment
+      price: 5000
+    }
+  }
+)
